@@ -2,6 +2,8 @@
 
 ## Uygulamayı kendinize göre uyarlamak için yapmanız gereken bazı şeyler var. Adım adım hepsini göstereceğim.
 
+[Uygulama İndirme Linki](https://github.com/nickzsche/react-native-expo-webview)
+
 1. SPLASH SCREEN DEĞIŞTIRME:
 
 - Splash Screen değiştirmek için, "**assets**" klasörü içerisine girin, "**images**" isimli gördüğünüz klasörün içerisinde "**splash_image.png**" dosyasını göreceksiniz. Açılış sırasında çıkmasını istediğiniz **".png"** uzantılı dosyanızı yeniden isimlendirerek "**splash_image.png**" yapın ve buraya sürükleyip bırakın. Dosyayı değiştir deyin.
