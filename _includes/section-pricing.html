@@ -1,0 +1,53 @@
+{% assign content = site.data.content['pricing'] %}
+
+<!-- Section Pricing -->
+<div class="section pricing" id="section-pricing">
+  <div class="content">
+
+    <!-- title -->
+    <div class="titles">
+      <div class="title">{{ content.title }}</div>
+      <div class="subtitle">{{ content.subtitle }}</div>
+    </div>
+
+    <!-- pricing items -->
+    <div class="content-carousel">
+      <div class="owl-carousel" data-slidesview="2" data-slidesview_mobile="1">
+        {% for item in content.items %}
+        <div class="item">
+          <div class="pricing-item">
+            <div class="icons"><i class="{{ item.icon }}"></i></div>
+            <div class="name">{{ item.name }}</div>
+            <div class="amount">
+              <span class="number">
+                <span class="dollar">{{ item.price_before }}</span>
+                <span>{{ item.price }}</span>
+                <span class="period">{{ item.price_after }}</span>
+              </span>
+            </div>
+            <div class="feature-list">
+              <ul>
+                {% for list in item.list %}
+                <li{% if list.disable == "yes" %} class="disable"{% endif %}>{{ list.value }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+            <a href="{{ item.link }}" class="btn">
+              <span class="animated-button"><span>{{ item.button }}</span></span>
+              <i class="icon fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- navigation -->
+      <div class="navs">
+        <span class="prev fas fa-chevron-left"></span>
+        <span class="next fas fa-chevron-right"></span>
+      </div>
+
+    </div>
+
+  </div>
+</div>

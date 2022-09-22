@@ -1,0 +1,57 @@
+{% assign content = site.data.content['contacts'] %}
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+
+<!-- Section Contacts Info >-->
+<div class="section contacts" id="section-contacts">
+  <div class="content">
+
+    <!-- title -->
+    <div class="titles">
+      <div class="title">{{ content.title }}</div>
+      <div class="subtitle">{{ content.subtitle }}</div>
+    </div>
+
+    <!-- contact form -->
+    <div class="contact-form">
+      <form id="cform" action="https://formsubmit.io/send/{{ site.formsubmit_email }}" method="post">
+        <div class="group-val">
+          <div class="label">{{ ui_text.full_name }} <strong>*</strong></div>
+            <input type="text" name="name" placeholder="{{ ui_text.your_full_name }}" />
+        </div>
+        <div class="group-val">
+          <div class="label">{{ ui_text.email_address }} <strong>*</strong></div>
+          <input type="email" name="email" placeholder="{{ ui_text.your_email_address }}" />
+        </div>
+        <div class="group-val">
+          <div class="label">{{ ui_text.message }} <strong>*</strong></div>
+          <textarea name="message" placeholder="{{ ui_text.your_message }}"></textarea>
+        </div>
+        <div class="group-bts">
+          <button type="submit" class="btn">
+            <span class="animated-button"><span>{{ ui_text.send_message }}</span></span>
+            <i class="icon fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </form>
+      <div class="alert-success">
+        <p>Thanks, your message is sent successfully.</p>
+      </div>
+    </div>
+
+    <!-- contact info -->
+    <div class="contact-info">
+      <div class="name">{{ content.name }}</div>
+      <div class="subname">{{ content.subname }}</div>
+      <div class="info-list">
+        <ul>
+          {% for item in content.list %}
+          <li><strong>{{ item.label }}</strong> {{ item.value }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="author">{{ content.signature }}</div>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+</div>

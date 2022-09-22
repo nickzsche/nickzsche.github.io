@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% assign bg_type = page.bg_type %}
+
+{% if bg_type == 'image-1' %}
+  {% include section-home-image-1.html %}
+{% elsif bg_type == "image-2" %}
+  {% include section-home-image-2.html %}
+{% elsif bg_type == "image-3" %}
+  {% include section-home-image-3.html %}
+{% elsif bg_type == "slider" %}
+  {% include section-home-slider.html %}
+{% elsif bg_type == "video" %}
+  {% include section-home-video.html %}
+{% else %}
+  
+{% endif %}
+
+{% assign sections = page.sections | split: "," %}
+
+{% for section in sections %}
+	{% include section-{{ section }}.html %}
+{% endfor %}

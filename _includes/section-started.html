@@ -1,0 +1,45 @@
+{% assign content = site.data.content['started'] %}
+
+<!-- Section Started -->
+<div class="section started" id="section-started">
+  <div class="centrize full-width">
+    <div class="vertical-center">
+      <!-- title -->
+      <h1 class="h-title">
+        {{ content.title }}
+      </h1>
+
+      <!-- content started -->
+      <div class="started-content">
+
+        <!-- subtitle -->
+        <div class="h-subtitles">
+          <div class="h-subtitle typing-subtitle">
+            {% for item in content.typed %}
+            <p>{{ item }}</p>
+            {% endfor %}
+          </div>
+          <span class="typed-subtitle"></span>
+        </div>
+
+        <!-- text -->
+        <div class="h-text">
+          {{ content.text }}
+        </div>
+
+        <!-- button -->
+        <a href="{{ content.button.link }}" class="btn">
+          <span class="animated-button"><span>{{ content.button.text }}</span></span>
+          <i class="icon fas fa-chevron-right"></i>
+        </a>
+
+        <!-- mosue button -->
+        <a href="#" class="btn mouse-btn" style="display: none;">
+          <i class="icon fas fa-chevron-down"></i>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>

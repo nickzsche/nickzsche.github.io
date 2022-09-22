@@ -1,0 +1,329 @@
+# Sections content configuration file
+##
+### use navigation.yml file to re-order, delete or add section of each card
+### here you can find all content in all pre-build sections
+
+### Started [ started ]
+started:
+  title: "Joé <br />Wilson"
+  typed:
+    - "Consultant and Mentor"
+    - "Web Designer"
+    - "Programmer"
+  text: "Hello! I am Web Developer from United States, New York. I have rich experience in web site design and building, also I am good at wordpress. I love to talk with you about our unique."
+  button:
+    text: "Contact Me"
+    link: "#section-contacts"
+
+### About [ about ]
+about:
+  title: "About Me"
+  subtitle: "My story"
+  text: "<p>Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p><p>Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>"
+  list:
+    - label: "Age"
+      value: "24"
+
+    - label: "Residence"
+      value: "USA"
+
+    - label: "Freelance"
+      value: "Available"
+
+    - label: "Address"
+      value: "San Francisco"
+
+    - label: "Phone"
+      value: "+1 256 254 84 56"
+
+    - label: "E-mail"
+      value: "alejandroa@gmail.com"
+
+### Services [ services ]
+services:
+  title: "Services"
+  subtitle: "What I Do"
+  items:
+    - icon: "fas fa-brain"
+      name: "Economic <br />Science"
+      text: "Economics is a social science concerned with the production, consumption of goods and services."
+
+    - icon: "fas fa-ad"
+      name: "Marketing <br />& Advertising"
+      text: "Advertising Management though is a complex process of employing various media to sell a product or service."
+
+    - icon: "fab fa-chrome"
+      name: "Web <br />Development"
+      text: "The web development process includes: web design, web content, client-side / server-side scripting and network security configuration."
+
+    - icon: "fas fa-headphones"
+      name: "Music <br />Writing"
+      text: "Sheet music is the basic form in which Western classical music is notated so that it can be learned and performed by solo singers."
+
+    - icon: "fas fa-gamepad"
+      name: "Game <br />Development"
+      text: "Come Up With a Game Idea. An idea is the first thing that comes to mind when a game is being described before creating."
+
+    - icon: "fas fa-video"
+      name: "Photography <br />& Video"
+      text: "Sessions. If you are a photographer that spends most of the time in a portrait studio, you can charge for your session."
+
+### Pricing [ pricing ]
+pricing:
+  title: "Pricing"
+  subtitle: "My Plans"
+  items:
+    - icon: "fas fa-star"
+      name: "Basic"
+      price: "39"
+      price_before: "$"
+      price_after: "hour"
+      list:
+        - value: "Web Development"
+          disable: "no"
+        - value: "Advetising"
+          disable: "no"
+        - value: "Game Development"
+          disable: "no"
+        - value: "Music Writing"
+          disable: "yes"
+        - value: "Photography"
+          disable: "yes"
+      button: "Buy Now"
+      link: "#section-contacts"
+
+    - icon: "fas fa-rocket"
+      name: "Premium"
+      price: "59"
+      price_before: "$"
+      price_after: "hour"
+      list:
+        - value: "Web Development"
+          disable: "no"
+        - value: "Advetising"
+          disable: "no"
+        - value: "Game Development"
+          disable: "no"
+        - value: "Music Writing"
+          disable: "no"
+        - value: "Photography"
+          disable: "no"
+      button: "Buy Now"
+      link: "#section-contacts"
+
+    - icon: "fas fa-space-shuttle"
+      name: "Ultimate"
+      price: "79"
+      price_before: "$"
+      price_after: "hour"
+      list:
+        - value: "Web Development"
+          disable: "no"
+        - value: "Advetising"
+          disable: "no"
+        - value: "Game Development"
+          disable: "no"
+        - value: "Music Writing"
+          disable: "no"
+        - value: "Photography & Video"
+          disable: "no"
+      button: "Buy Now"
+      link: "#section-contacts"
+
+### Resume [ resume ]
+resume:
+  experience:
+    title: "Experience"
+    subtitle: "Working with"
+    items:
+      - year: "Present"
+        name: "The Turin <br />Olympics"
+        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+
+      - year: "2016-2018"
+        name: "Red <br />Drifting"
+        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+
+      - year: "2014-2016"
+        name: "World <br />Economy"
+        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+
+      - year: "2012-2014"
+        name: "Art Director <br />Facedevs"
+        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+
+  education:
+    title: "Education"
+    subtitle: "Studied at"
+    items:
+      - year: "2011-2012"
+        name: "Art University <br />New York"
+        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+
+      - year: "2010-2011"
+        name: "Programming Course <br />Paris"
+        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+
+      - year: "2009-2010"
+        name: "Web Design Course <br />London"
+        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+
+### Skills [ skills ]
+skills:
+  columns:
+    - type: "default" #skills progress type - default, dotted, circles
+      title: "Design Skills"
+      subtitle: "Creative ability"
+      slug: "design"
+      items:
+        - label: "Web Layout"
+          value: "90" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
+
+        - label: "Illustrations"
+          value: "70" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
+
+        - label: "Photoshop"
+          value: "95" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
+
+        - label: "Graphic Design"
+          value: "85" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
+
+    - type: "dotted" #skills progress type - default, dotted, circles
+      title: "Language Skills"
+      subtitle: "Reading and writing"
+      slug: "lang"
+      items:
+        - label: "English"
+          value: "90" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
+
+        - label: "German"
+          value: "70" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
+
+        - label: "Italian"
+          value: "55" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
+
+        - label: "French"
+          value: "85" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
+
+    - type: "circles" #skills progress type - default, dotted, circles
+      title: "Coding Skills"
+      subtitle: "Developing on"
+      slug: "code"
+      items:
+        - label: "WordPress"
+          value: "90" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt."
+
+        - label: "PHP, MYSQL"
+          value: "75" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt."
+
+        - label: "JavaScript"
+          value: "85" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt."
+
+        - label: "Angular"
+          value: "80" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt."
+
+        - label: "HTML, CSS"
+          value: "95" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt."
+
+        - label: "Python"
+          value: "90" #0-100 progress in %
+          text: "Etiam sit amet orci eget eros faucibus tincidunt."
+
+### Testimonials [ testimonials ]
+testimonials:
+  title: "Reviews"
+  subtitle: "What customers say"
+  items:
+    - image: "assets/img/testimonials/rev1.png"
+      name: "Joseph Mackey"
+      role: "Architect"
+      text: "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday."
+
+    - image: "assets/img/testimonials/rev1.png"
+      name: "James Green"
+      role: "Art Director"
+      text: "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday."
+
+    - image: "assets/img/testimonials/rev1.png"
+      name: "Joseph Mackey"
+      role: "Architect"
+      text: "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday."
+
+    - image: "assets/img/testimonials/rev1.png"
+      name: "James Green"
+      role: "Art Director"
+      text: "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday."
+
+### Clients [ clients ]
+clients:
+  title: "Clients"
+  subtitle: "My partners"
+  items:
+    - url: "https://www.bslthemes.site"
+      image: "assets/img/clients/client2.png"
+
+    - url: "https://www.bslthemes.site"
+      image: "assets/img/clients/client3.png"
+
+    - url: "https://www.bslthemes.site"
+      image: "assets/img/clients/client1.png"
+
+    - url: "https://www.bslthemes.site"
+      image: "assets/img/clients/client4.png"
+
+    - url: "https://www.bslthemes.site"
+      image: "assets/img/clients/client2.png"
+
+    - url: "https://www.bslthemes.site"
+      image: "assets/img/clients/client3.png"
+
+    - url: "https://www.bslthemes.site"
+      image: "assets/img/clients/client1.png"
+
+    - url: "https://www.bslthemes.site"
+      image: "assets/img/clients/client4.png"
+
+### Portfolio [ portfolio ]
+#items generates from dir /_works/*
+portfolio:
+  title: "Portfolio"
+  subtitle: "Latest works"
+
+### Contact [ contacts ]
+contacts:
+  title: "Contact"
+  subtitle: "Let's talk"
+  name: "Joe Wilson"
+  subname: "Consultant & Mentor"
+  signature: "Joe Wilson"
+  list:
+    - label: "Age:"
+      value: "24"
+
+    - label: "Residence:"
+      value: "USA"
+
+    - label: "Freelance:"
+      value: "Available"
+
+    - label: "Address:"
+      value: "San Francisco"
+
+    - label: "Phone:"
+      value: "+1 256 254 84 56"
+
+    - label: "E-mail:"
+      value: "alejandroa@gmail.com"

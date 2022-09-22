@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+
+<div class="background-bg background-bg-inner">
+  <div class="background-filter">
+    <div class="background-img"></div>
+  </div>
+</div>
+
+<div class="section started section-title">
+	<div class="centrize full-width">
+		<div class="vertical-center">
+			<div class="started-content">
+				<h1 class="h-title">
+					{{ ui_text.archive }}: {{ page.title }}
+				</h1>
+				<div class="h-subtitles">
+					<div class="h-subtitle">
+						{{ ui_text.latest_posts }}
+          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section blog with-sidebar">
+	<div class="content">
+
+		<!-- blog items -->
+		<div class="blog-items cols">
+		  {% for post in page.posts %}
+      <div class="blog-col">
+      	<div class="blog-item content-box">
+      		<div class="post">
+            {% if post.image != nil %}
+            <div class="image">
+      		    <a class="post-thumbnail" href="{{ post.url }}">
+      			    <img src="{{ post.image | relative_url }}" class="wp-post-image" alt="{{ post.title }}" />
+              </a>
+      			</div>
+            {% endif %}
+      			<div class="desc">
+      			  <div class="date">
+      			    {{ post.date | date: site.date_format }}
+      			  </div>
+
+              <!--<div class="categories">{{ post.categories | join: ", " }}</div>-->
+      				<a href="{{ post.url }}" class="name">{{ post.title }}</a>
+      				<div class="single-post-text">
+                {{ post.excerpt }}
+                <div>
+                  <a href="{{ post.url }}" class="btn">
+                    <span class="animated-button">
+                      <span>{{ ui_text.read_more }}</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+      {% endfor %}
+
+		</div>
+
+		{%- include sidebar.html -%}
+
+		<div class="clear"></div>
+	</div>
+</div>

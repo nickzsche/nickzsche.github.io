@@ -1,0 +1,40 @@
+# Theme Settings Configuration File
+##
+### use settings.yml file for configure colors, ui, rtl, sidebar, animation options
+
+### Main Settings
+settings:
+  quick_colors: "" # select quick color schemes: "beige", "blue", "brown", "green_light", "green", "orange", "purple", "red", "yellow_light", "yellow". If empty colors taken from _sass/ryancv/settings.scss
+
+### Header
+header:
+  logo:
+    image: "assets/img/logo.png"
+    text: "Joé <br />Wilson"
+    alt: "Joé Wilson"
+
+  button:
+    text: "Download CV"
+    url: "https://drive.google.com/"
+    icon: "fas fa-download"
+
+### Portfolio Filters Settings
+portfolio:
+  filters:
+    - name: "Video"
+      slug: "f-video"
+
+    - name: "Music"
+      slug: "f-music"
+
+    - name: "Links"
+      slug: "f-link"
+
+    - name: "Image"
+      slug: "f-image"
+
+    - name: "Gallery"
+      slug: "f-gallery"
+
+    - name: "Content"
+      slug: "f-content"

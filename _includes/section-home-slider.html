@@ -1,0 +1,18 @@
+{% assign content = site.data.hero['started-slider'] %}
+
+<!-- Background Slider -->
+<div class="background-bg">
+  <div class="started-carousel">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        {% for img in content.images %}
+        <div class="swiper-slide{% if img.index == 1 %} first{% endif %}">
+          <div class="background-filter">
+            <div class="background-img" style="background-image: url({{ img | relative_url }});"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

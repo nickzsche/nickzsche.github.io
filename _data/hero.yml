@@ -1,0 +1,24 @@
+# Home hero content configuration file
+##
+### here you can find all content for home page hero block
+
+### Started Image
+started-image1:
+  image: "assets/img/man.jpg"
+
+started-image2:
+  image: "assets/img/man2.jpg"
+
+started-image3:
+  image: "assets/img/girl3.jpg"
+
+### Started Video
+started-video:
+  video: "https://youtu.be/S4L8T2kFFck"
+
+### Started Slider
+started-slider:
+  images:
+    - "assets/img/girl.jpg"
+    - "assets/img/girl3.jpg"
+    - "assets/img/girl2.jpg"

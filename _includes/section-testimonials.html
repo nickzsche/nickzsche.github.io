@@ -1,0 +1,43 @@
+{% assign content = site.data.content['testimonials'] %}
+
+<!-- Section Testimonials -->
+<div class="section testimonials" id="section-testimonials">
+  <div class="content">
+
+    <!-- title -->
+    <div class="titles">
+      <div class="title">{{ content.title }}</div>
+      <div class="subtitle">{{ content.subtitle }}</div>
+    </div>
+
+    <!-- testimonials items -->
+    <div class="content-carousel">
+      <div class="owl-carousel" data-slidesView="2" data-slidesview_mobile="1">
+        {% for item in content.items %}
+        <div class="item">
+          <div class="reviews-item">
+            <div class="image">
+              <img src="{{ item.image | relative_url }}" alt="{{ item.name }}" />
+            </div>
+            <div class="info">
+              <div class="name">{{ item.name }}</div>
+              <div class="company">{{ item.role }}</div>
+            </div>
+            <div class="text">
+              {{ item.text }}
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- navigation -->
+      <div class="navs">
+        <span class="prev fas fa-chevron-left"></span>
+        <span class="next fas fa-chevron-right"></span>
+      </div>
+
+    </div>
+
+  </div>
+</div>

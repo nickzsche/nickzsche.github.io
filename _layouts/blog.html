@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+{% assign ui_text = site.data.ui-text['ui_text'] %}
+
+<div class="background-bg background-bg-inner">
+  <div class="background-filter">
+    <div class="background-img"></div>
+  </div>
+</div>
+
+<div class="section started section-title">
+	<div class="centrize full-width">
+		<div class="vertical-center">
+			<div class="started-content">
+				<h1 class="h-title">
+					{{ page.title }}
+				</h1>
+				<div class="h-subtitles">
+					<div class="h-subtitle">
+						{{ ui_text.blog_subtitle }}
+          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section blog with-sidebar">
+	<div class="content">
+
+		<!-- blog items -->
+		<div class="blog-items cols">
+		  {% for post in paginator.posts %}
+      <div class="blog-col">
+      	<div class="blog-item content-box">
+      		<div class="post">
+            {% if post.image != nil %}
+            <div class="image">
+      		    <a class="post-thumbnail" href="{{ post.url }}">
+      			    <img src="{{ post.image | relative_url }}" class="wp-post-image" alt="{{ post.title }}" />
+              </a>
+      			</div>
+            {% endif %}
+      			<div class="desc">
+      			  <div class="date">
+      			    {{ post.date | date: site.date_format }}
+      			  </div>
+
+              <!--<div class="categories">{{ post.categories | join: ", " }}</div>-->
+      				<a href="{{ post.url }}" class="name">{{ post.title }}</a>
+      				<div class="single-post-text">
+                {{ post.excerpt }}
+                <div>
+                  <a href="{{ post.url }}" class="btn">
+                    <span class="animated-button">
+                      <span>{{ ui_text.read_more }}</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+      {% endfor %}
+
+      {% if paginator.total_pages > 1 %}
+      <div class="pager">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | relative_url }}" class="page-numbers prev">{{ ui_text.prev }}</a>
+        {% else %}
+          <span class="page-numbers prev">{{ ui_text.prev }}</span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <span class="page-numbers current">{{ page }}</span>
+          {% elsif page == 1 %}
+            <a href="{{ '/' | relative_url }}" class="page-numbers">{{ page }}</a>
+          {% else %}
+            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="page-numbers">{{ page }}</a>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | relative_url }}" class="page-numbers next">{{ ui_text.next }}</a>
+        {% else %}
+          <span class="page-numbers next">{{ ui_text.next }}</span>
+        {% endif %}
+      </div>
+      {% endif %}
+
+		</div>
+
+		{%- include sidebar.html -%}
+
+		<div class="clear"></div>
+	</div>
+</div>

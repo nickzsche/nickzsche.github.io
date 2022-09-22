@@ -1,0 +1,33 @@
+{% assign content = site.data.content['about'] %}
+
+<!-- Section About -->
+<div class="section about" id="section-about">
+  <div class="content">
+
+    <!-- title -->
+    <div class="titles">
+      <div class="title">{{ content.title }}</div>
+      <div class="subtitle">{{ content.subtitle }}</div>
+    </div>
+
+    <!-- text -->
+    <div class="cols">
+      <div class="col col-full">
+        <div class="single-post-text">
+          {{ content.text }}
+        </div>
+      </div>
+    </div>
+
+    <!-- info list -->
+    <div class="info-list">
+      <ul>
+        {% for item in content.list %}
+        <li><strong>{{ item.label }}:</strong> {{ item.value }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+</div>

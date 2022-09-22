@@ -1,0 +1,37 @@
+{% assign content = site.data.content['clients'] %}
+
+<!-- Section Clients -->
+<div class="section clients" id="section-clients">
+  <div class="content">
+
+    <!-- title -->
+    <div class="titles">
+      <div class="title">{{ content.title }}</div>
+      <div class="subtitle">{{ content.subtitle }}</div>
+    </div>
+
+    <!-- clients items -->
+    <div class="content-carousel">
+      <div class="owl-carousel" data-slidesview="4" data-slidesview_mobile="2">
+        {% for item in content.items %}
+        <div class="item">
+          <div class="clients-item">
+            <a target="_blank" href="{{ item.url }}">
+              <img src="{{ item.image | relative_url }}" alt="client logo" />
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- navigation -->
+      <div class="navs">
+        <span class="prev fas fa-chevron-left"></span>
+        <span class="next fas fa-chevron-right"></span>
+      </div>
+
+    </div>
+
+    <div class="clear"></div>
+  </div>
+</div>
