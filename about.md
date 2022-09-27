@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Hakkımda
 ---
 
-So striking at of to welcomed resolved. Northward by described up household therefore attention. Excellence decisively nay man yet impression for contrasted remarkably.
+Şahan Hasret: 11 yıldır kodlama ve siber güvenlik ile uğraşmakta. Süleyman Demirel Üniversitesi mezunu. Siber Güvenlik konusunda ise Cyber-Warrior bünyesinde Lojistik Destek biriminde görevlidir.
